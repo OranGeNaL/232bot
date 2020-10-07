@@ -32,7 +32,8 @@ def help_message(message):
 
 @bot.message_handler(commands=['wthr'])
 def weather_message(message):
-    bot.send_message(message.chat.id, weatherer.check_weather_api(city="Хабаровск"))
-
+    a = weatherer.check_weather_api(city="Хабаровск")
+    bot.send_message(message.chat.id, a[0])
+    bot.send_photo(message.chat.id, open(a[1], 'rb'))
 
 bot.polling()

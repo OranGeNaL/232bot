@@ -22,6 +22,10 @@ def check_weather_api(city):
     req = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=da5bd0105833e7d94fbfcb03212a19b6&lang=ru&units=metric"
     resp = requests.get(req).json()
 
+    with open(resp['weather'][0]['icon'] + '.png', 'wb') as target:
+        a = requests.get("http://openweathermap.org/img/wn/" + resp['weather'][0]['icon'] + "@2x.png")
+        target.write(a.content)
+
     res = ""  # "На данный момент:\n"
     res += resp['weather'][0]['description'][0].upper() + resp['weather'][0]['description'][1:] + "\n"
     res += "Температура " + str(resp['main']['temp']) + "C\n"
@@ -29,7 +33,7 @@ def check_weather_api(city):
     res += "Скорость ветра " + str(resp['wind']['speed']) + 'м/с\n'
 
     print(res)
-    return res
+    return res, resp['weather'][0]['icon'] + '.png'
 
 
 if __name__ == '__main__':
