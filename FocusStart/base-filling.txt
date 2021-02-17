@@ -1,0 +1,56 @@
+--INSERT INTO Shops VALUES(1, "Самбери", "Северный", "Хабаровск", "Тихоокеанская 148", NULL);
+
+--INSERT INTO Employees VALUES(1, "Den", "Karataev", "228322", "email@mail.ru", "Director", 1)
+
+
+
+INSERT INTO Products VALUES(1, "460701229728", "Морская соль Marbelle");
+INSERT INTO Products VALUES(2, "4607073580499", "Масло Знатное семейство");
+INSERT INTO Products VALUES(3, "4607059622076", "Уксусная кислота Veang");
+INSERT INTO Products VALUES(4, "8801126000019", "Соевый соус Обок");
+INSERT INTO Products VALUES(5, "4607059622007", "Соевый соус Veang");
+INSERT INTO Products VALUES(6, "4607038301220", "Чай Ассам Gold Bond");
+INSERT INTO Products VALUES(7, "4605922329985", "Спагетти Болоньезе Knorr");
+INSERT INTO Products VALUES(8, "4601780005429", "Рис круглозёрный Макфа");
+INSERT INTO Products VALUES(9, "4610000821152", "Суп куриный с вермишелью Приправыч");
+INSERT INTO Products VALUES(10, "4605496020028", "Бульон куриный домашний Ролтон");
+INSERT INTO Products VALUES(11, "4607016245966", "Овсяные хлопья Увелка");
+INSERT INTO Products VALUES(12, "4607034780012", "Говядина тушеная БурятМясоПром");
+INSERT INTO Products VALUES(13, "4607098105127", "Говядина тушеная Г.Орск");
+INSERT INTO Products VALUES(14, "8001090016928", "Средство для мыться посуды Fairy Нежные Руки");
+INSERT INTO Products VALUES(15, "4607127720482", "Лавровый лист Даль Пряна");
+INSERT INTO Products VALUES(16, "9001414214121", "Сочная курочка со специями Kotanyi");
+INSERT INTO Products VALUES(17, "8801045996677", "Кляр Оттоги");
+INSERT INTO Products VALUES(18, "4607046121865", "Рис круглозёрный Теплые традиции");
+INSERT INTO Products VALUES(19, "4600935000432", "Крупа гречневая Prosto");
+INSERT INTO Products VALUES(20, "4603406001143", "Кукуруза особо сладкая ФрауМарта");
+
+
+INSERT INTO Employees VALUES(1, "Родионов", "Парамон", "+7(914)621-84-52", "thisisem.a.il@gmail.com", "Управляющий", NULL);
+INSERT INTO Employees VALUES(2, "Лебедев", "Марк", "+7(914)574-76-01", "thisise.mail@gmail.com", "Бухгалтер", NULL);
+INSERT INTO Employees VALUES(3, "Лазарев", "Зиновий", "+7(914)078-81-35", "thisise.m.a.i.l@gmail.com", "Продавец-консультант", NULL);
+INSERT INTO Employees VALUES(4, "Андреев", "Витольд", "+7(914)920-69-48", "thisis.ema.i.l@gmail.com", "Уборщик", NULL);
+INSERT INTO Employees VALUES(5, "Кудряшов", "Михаил", "+7(914)694-04-62", "thisis.e.m.a.i.l@gmail.com", "Управляющий", NULL);
+INSERT INTO Employees VALUES(6, "Крюков", "Азарий", "+7(914)377-98-82", "thisi.se.m.a.i.l@gmail.com", "Бухгалтер", NULL);
+INSERT INTO Employees VALUES(7, "Соболев", "Зиновий", "+7(914)607-74-32", "thisi.s.e.m.ail@gmail.com", "Продавец-консультант", NULL);
+INSERT INTO Employees VALUES(8, "Никифоров", "Владлен", "+7(914)520-57-81", "this.ise.mail@gmail.com", "Уборщик", NULL);
+INSERT INTO Employees VALUES(9, "Смирнова", "Кара", "+7(914)753-21-62", "this.ise.m.a.il@gmail.com", "Управляющий", NULL);
+INSERT INTO Employees VALUES(10, "Дьячкова", "Полина", "+7(914)394-28-71", "th.isi.s.ema.i.l@gmail.com", "Бухгалтер", NULL);
+INSERT INTO Employees VALUES(11, "Иванкова", "Полина", "+7(914)783-11-55", "th.isi.s.e.ma.i.l@gmail.com", "Продавец-консультант", NULL);
+INSERT INTO Employees VALUES(12, "Савина", "Ева", "+7(914)852-54-39", "th.is.is.e.m.ail@gmail.com", "Уборщик", NULL);
+INSERT INTO Employees VALUES(13, "Киселева", "Кристина", "+7(914)824-09-65", "th.i.s.is.e.m.ail@gmail.com", "Управляющий", NULL);
+INSERT INTO Employees VALUES(14, "Меркушева", "Арина", "+7(914)605-47-69", "t.hisi.se.m.a.i.l@gmail.com", "Бухгалтер", NULL);
+INSERT INTO Employees VALUES(15, "Николаева", "Софья", "+7(914)526-78-24", "t.hi.sis.em.ai.l@gmail.com", "Продавец-консультант", NULL);
+INSERT INTO Employees VALUES(16, "Воронцова", "Рая", "+7(914)773-11-24", "t.h.isise.ma.i.l@gmail.com", "Уборщик", NULL);
+
+
+INSERT INTO Shops VALUES(1, "Самбери", "Хабаровский край", "Хабаровск", "ул. Тихоокеанская 140", 1);
+INSERT INTO Shops VALUES(2, "Раз-Два", "Хабаровский край", "Комсомольск-на-Амуре", "ул. Ленина 38", 5);
+INSERT INTO Shops VALUES(3, "Реми", "Приморский край", "Уссурийск", "ул. Промышленная 96", 9);
+INSERT INTO Shops VALUES(4, "Пятерочка", "Приморский край", "Владивосток", "ул. Океанская 10", 13);
+
+
+UPDATE Employees SET Shop_ID=1 WHERE ID BETWEEN 1 AND 5;
+UPDATE Employees SET Shop_ID=2 WHERE ID BETWEEN 5 AND 9;
+UPDATE Employees SET Shop_ID=3 WHERE ID BETWEEN 9 AND 13;
+UPDATE Employees SET Shop_ID=4 WHERE ID BETWEEN 13 AND 17;

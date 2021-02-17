@@ -1,0 +1,13 @@
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\bin\Debug\netcoreapp3.1\xOR.exe
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\bin\Debug\netcoreapp3.1\xOR.deps.json
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\bin\Debug\netcoreapp3.1\xOR.runtimeconfig.json
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\bin\Debug\netcoreapp3.1\xOR.runtimeconfig.dev.json
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\bin\Debug\netcoreapp3.1\xOR.dll
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\bin\Debug\netcoreapp3.1\xOR.pdb
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.csprojAssemblyReference.cache
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.AssemblyInfoInputs.cache
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.AssemblyInfo.cs
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.csproj.CoreCompileInputs.cache
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.dll
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.pdb
+C:\Users\pshen\Documents\GitHub\232bot\xOR\xOR\xOR\obj\Debug\netcoreapp3.1\xOR.genruntimeconfig.cache
