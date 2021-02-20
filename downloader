@@ -1,0 +1,61 @@
+#!/bin/bash
+mkdir sources
+cd sources
+
+post=postgresql-9.0.0
+nc=ncurses-6.0
+readl=readline-7.0
+targz=.tar.gz
+dest=$HOME/Post
+
+if ["$1" != ""]
+then
+dest=$HOME/Post
+else
+dest=$1
+fi
+
+export CPPFLAGS="-P"
+
+wget "https://ftp.postgresql.org/pub/source/v9.0.0/$post$targz"
+wget "http://ftp.gnu.org/pub/gnu/ncurses/$nc$targz"
+wget "http://ftp.gnu.org/pub/gnu/readline/$readl$targz"
+
+tar -xf $post$targz
+tar -xf $nc$targz
+tar -xf $readl$targz
+
+rm $post$targz
+rm $nc$targz
+rm $readl$targz
+
+cd $post
+mkdir lib
+mkdir include
+mkdir share
+
+cd ../$nc
+./configure --prefix=$HOME/sources/comp/nc
+make
+make install
+
+cd $HOME/sources/comp/nc
+cp -r share/* $HOME/sources/$post/share
+cp -r lib/* $HOME/sources/$post/lib
+cp -r include/* $HOME/sources/$post/include
+
+cd $HOME/sources/$readl
+./configure --prefix=$HOME/sources/comp/rl
+make
+make install
+
+cd $HOME/sources/comp/rl
+cp -r lib/* $HOME/sources/$post/lib
+cp -r include/* $HOME/sources/$post/include
+
+cd $HOME/sources/$post
+
+./configure --prefix=$dest --with-libraries=/home/orangenal/sources/postgresql-9.0.0/lib --with-includes=/home/orangenal/sources/postgresql-9.0.0/include --without-zlib
+make
+make install
+
