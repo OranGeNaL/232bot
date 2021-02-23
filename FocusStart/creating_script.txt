@@ -1,0 +1,72 @@
+1. коды и наименования товаров, которые отсутствовали в отчетный период во всех покупках клиентов.
+CREATE VIEW last_month AS
+SELECT products.ID
+FROM products
+LEFT JOIN purchase_receipts pure
+	ON products.ID=pure.product_ID
+LEFT JOIN purchases pr
+	ON pure.purchase_ID=pr.ID
+WHERE EXTRACT(MONTH FROM date_time)=EXTRACT(MONTH FROM (NOW() - INTERVAL '1 MONTH')) OR date_time=NULL
+GROUP BY products.ID
+;
+
+SELECT pr.product_name, pr.code
+FROM products pr
+LEFT JOIN last_month
+	ON last_month.ID=pr.ID
+WHERE last_month.ID IS NULL
+;
+
+2. в разрезе магазинов вывести имена и фамилии продавцов, которые
+не совершили в отчетный период ни одной продажи. Продавец – это сотрудник, у
+которого в должности содержится подстрока ПРОДАВЕЦ без учета регистра.
+
+3. в разрезе магазинов вывести имена и фамилии самых эффективных
+в отчетный период продавцов (по полученной выручке). Продавец – это сотрудник, у
+которого в должности содержится подстрока ПРОДАВЕЦ без учета регистра.
+
+SELECT empl.first_name, empl.last_name, SUM(amount) salary, shops.shop_name
+FROM purchases
+LEFT JOIN employees empl
+	ON purchases.seller_ID=empl.ID
+LEFT JOIN shops
+	ON empl.shop_id=shops.id
+WHERE EXTRACT(MONTH FROM date_time)=EXTRACT(MONTH FROM (NOW() - INTERVAL '1 MONTH')) AND empl.job_name LIKE 'Продавец-консультант'
+GROUP BY empl.first_name, empl.last_name, shops.shop_name
+ORDER BY salary DESC
+;
+
+4. выручка в отчетный период в разрезе регионов. Упорядочите
+результат по убыванию выручки.
+
+SELECT sh.region, SUM(amount) sums
+FROM purchases
+LEFT JOIN employees empl
+	ON purchases.seller_ID IS NOT NULL AND purchases.seller_ID=empl.ID
+LEFT JOIN shops sh
+	ON empl.shop_ID=sh.ID
+WHERE EXTRACT(MONTH FROM date_time)=EXTRACT(MONTH FROM (NOW() - INTERVAL '1 MONTH')) AND sh.region IS NOT NULL
+GROUP BY sh.region
+ORDER BY sums DESC
+;
+
+5. Выяснилось, что в результате программного сбоя в части магазинов в некоторые дни
+полная стоимость покупки не бьётся с её разбивкой по товарам. Известно, что данные в
+самих чеках покупок остались корректные, то есть пострадали только некоторые данные
+столбца PURCHASES.AMOUNT. Выведите такие магазины и дни, в которые в них случился
+сбой, а также сумму расхождения между полной стоимостью покупки и суммой по чеку.
+
+SELECT shops.shop_name, purchases.date_time, ABS(real_amounts.amount - purchases.amount) AS diverse
+FROM (
+SELECT SUM(pure.quantity*(pure.amount_full - pure.amount_discount)) AS amount, pure.purchase_id
+FROM purchase_receipts AS pure
+GROUP BY pure.purchase_id
+ORDER BY pure.purchase_id
+	) AS real_amounts
+LEFT JOIN purchases
+ON purchases.id=real_amounts.purchase_id
+LEFT JOIN employees
+ON purchases.seller_id=employees.id
+LEFT JOIN shops
+ON employees.shop_id=shops.id
+WHERE real_amounts.amount!=purchases.amount;

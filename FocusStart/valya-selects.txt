@@ -1,0 +1,34 @@
+3.
+DROP VIEW IF EXISTS selled_last_month;
+
+CREATE VIEW selled_last_month AS
+SELECT DISTINCT Products.id
+FROM Purchase_Receipts
+LEFT JOIN Purchases ON Purchases.id=Purchase_Receipts.purchase_id
+LEFT JOIN Products ON Products.id=Purchase_Receipts.product_id
+WHERE date_part('month', Purchases.date_time)
+BETWEEN date_part('month', current_date) - 1
+AND date_part('month', current_date);
+
+SELECT Products.id, Products.product_name
+FROM Products
+LEFT JOIN selled_last_month ON selled_last_month.id=Products.id
+WHERE selled_last_month.id IS NULL;
+
+4.
+DROP VIEW IF EXISTS sellers_last_month;
+
+CREATE VIEW sellers_last_month AS
+SELECT DISTINCT Purchases.seller_id
+FROM Purchases
+RIGHT JOIN Employees ON Employees.id=Purchases.seller_id
+WHERE date_part('month', Purchases.date_time)
+BETWEEN date_part('month', current_date) - 1
+AND date_part('month', current_date)
+ORDER BY Purchases.seller_id;
+
+SELECT Employees.first_name, Employees.last_name, Shops.shop_name
+FROM Employees
+LEFT JOIN sellers_last_month ON sellers_last_month.seller_id=Employees.id
+LEFT JOIN Shops ON Shops.id=Employees.shop_id
+WHERE LOWER(Employees.job_name) LIKE '%продавец%' AND sellers_last_month.seller_id IS NULL;
