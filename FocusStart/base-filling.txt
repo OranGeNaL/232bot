@@ -1,56 +1,677 @@
---INSERT INTO Shops VALUES(1, "Самбери", "Северный", "Хабаровск", "Тихоокеанская 148", NULL);
+--INSERT INTO Shops VALUES(1, 'Самбери', 'Северный', 'Хабаровск', 'Тихоокеанская 148', NULL);
 
---INSERT INTO Employees VALUES(1, "Den", "Karataev", "228322", "email@mail.ru", "Director", 1)
-
-
-
-INSERT INTO Products VALUES(1, "460701229728", "Морская соль Marbelle");
-INSERT INTO Products VALUES(2, "4607073580499", "Масло Знатное семейство");
-INSERT INTO Products VALUES(3, "4607059622076", "Уксусная кислота Veang");
-INSERT INTO Products VALUES(4, "8801126000019", "Соевый соус Обок");
-INSERT INTO Products VALUES(5, "4607059622007", "Соевый соус Veang");
-INSERT INTO Products VALUES(6, "4607038301220", "Чай Ассам Gold Bond");
-INSERT INTO Products VALUES(7, "4605922329985", "Спагетти Болоньезе Knorr");
-INSERT INTO Products VALUES(8, "4601780005429", "Рис круглозёрный Макфа");
-INSERT INTO Products VALUES(9, "4610000821152", "Суп куриный с вермишелью Приправыч");
-INSERT INTO Products VALUES(10, "4605496020028", "Бульон куриный домашний Ролтон");
-INSERT INTO Products VALUES(11, "4607016245966", "Овсяные хлопья Увелка");
-INSERT INTO Products VALUES(12, "4607034780012", "Говядина тушеная БурятМясоПром");
-INSERT INTO Products VALUES(13, "4607098105127", "Говядина тушеная Г.Орск");
-INSERT INTO Products VALUES(14, "8001090016928", "Средство для мыться посуды Fairy Нежные Руки");
-INSERT INTO Products VALUES(15, "4607127720482", "Лавровый лист Даль Пряна");
-INSERT INTO Products VALUES(16, "9001414214121", "Сочная курочка со специями Kotanyi");
-INSERT INTO Products VALUES(17, "8801045996677", "Кляр Оттоги");
-INSERT INTO Products VALUES(18, "4607046121865", "Рис круглозёрный Теплые традиции");
-INSERT INTO Products VALUES(19, "4600935000432", "Крупа гречневая Prosto");
-INSERT INTO Products VALUES(20, "4603406001143", "Кукуруза особо сладкая ФрауМарта");
+--INSERT INTO Employees VALUES(1, 'Den', 'Karataev', '228322', 'email@mail.ru', 'Director', 1)
 
 
-INSERT INTO Employees VALUES(1, "Родионов", "Парамон", "+7(914)621-84-52", "thisisem.a.il@gmail.com", "Управляющий", NULL);
-INSERT INTO Employees VALUES(2, "Лебедев", "Марк", "+7(914)574-76-01", "thisise.mail@gmail.com", "Бухгалтер", NULL);
-INSERT INTO Employees VALUES(3, "Лазарев", "Зиновий", "+7(914)078-81-35", "thisise.m.a.i.l@gmail.com", "Продавец-консультант", NULL);
-INSERT INTO Employees VALUES(4, "Андреев", "Витольд", "+7(914)920-69-48", "thisis.ema.i.l@gmail.com", "Уборщик", NULL);
-INSERT INTO Employees VALUES(5, "Кудряшов", "Михаил", "+7(914)694-04-62", "thisis.e.m.a.i.l@gmail.com", "Управляющий", NULL);
-INSERT INTO Employees VALUES(6, "Крюков", "Азарий", "+7(914)377-98-82", "thisi.se.m.a.i.l@gmail.com", "Бухгалтер", NULL);
-INSERT INTO Employees VALUES(7, "Соболев", "Зиновий", "+7(914)607-74-32", "thisi.s.e.m.ail@gmail.com", "Продавец-консультант", NULL);
-INSERT INTO Employees VALUES(8, "Никифоров", "Владлен", "+7(914)520-57-81", "this.ise.mail@gmail.com", "Уборщик", NULL);
-INSERT INTO Employees VALUES(9, "Смирнова", "Кара", "+7(914)753-21-62", "this.ise.m.a.il@gmail.com", "Управляющий", NULL);
-INSERT INTO Employees VALUES(10, "Дьячкова", "Полина", "+7(914)394-28-71", "th.isi.s.ema.i.l@gmail.com", "Бухгалтер", NULL);
-INSERT INTO Employees VALUES(11, "Иванкова", "Полина", "+7(914)783-11-55", "th.isi.s.e.ma.i.l@gmail.com", "Продавец-консультант", NULL);
-INSERT INTO Employees VALUES(12, "Савина", "Ева", "+7(914)852-54-39", "th.is.is.e.m.ail@gmail.com", "Уборщик", NULL);
-INSERT INTO Employees VALUES(13, "Киселева", "Кристина", "+7(914)824-09-65", "th.i.s.is.e.m.ail@gmail.com", "Управляющий", NULL);
-INSERT INTO Employees VALUES(14, "Меркушева", "Арина", "+7(914)605-47-69", "t.hisi.se.m.a.i.l@gmail.com", "Бухгалтер", NULL);
-INSERT INTO Employees VALUES(15, "Николаева", "Софья", "+7(914)526-78-24", "t.hi.sis.em.ai.l@gmail.com", "Продавец-консультант", NULL);
-INSERT INTO Employees VALUES(16, "Воронцова", "Рая", "+7(914)773-11-24", "t.h.isise.ma.i.l@gmail.com", "Уборщик", NULL);
+
+INSERT INTO Products VALUES(1, '460701229728', 'Морская соль Marbelle');
+INSERT INTO Products VALUES(2, '4607073580499', 'Масло Знатное семейство');
+INSERT INTO Products VALUES(3, '4607059622076', 'Уксусная кислота Veang');
+INSERT INTO Products VALUES(4, '8801126000019', 'Соевый соус Обок');
+INSERT INTO Products VALUES(5, '4607059622007', 'Соевый соус Veang');
+INSERT INTO Products VALUES(6, '4607038301220', 'Чай Ассам Gold Bond');
+INSERT INTO Products VALUES(7, '4605922329985', 'Спагетти Болоньезе Knorr');
+INSERT INTO Products VALUES(8, '4601780005429', 'Рис круглозёрный Макфа');
+INSERT INTO Products VALUES(9, '4610000821152', 'Суп куриный с вермишелью Приправыч');
+INSERT INTO Products VALUES(10, '4605496020028', 'Бульон куриный домашний Ролтон');
+INSERT INTO Products VALUES(11, '4607016245966', 'Овсяные хлопья Увелка');
+INSERT INTO Products VALUES(12, '4607034780012', 'Говядина тушеная БурятМясоПром');
+INSERT INTO Products VALUES(13, '4607098105127', 'Говядина тушеная Г.Орск');
+INSERT INTO Products VALUES(14, '8001090016928', 'Средство для мыться посуды Fairy Нежные Руки');
+INSERT INTO Products VALUES(15, '4607127720482', 'Лавровый лист Даль Пряна');
+INSERT INTO Products VALUES(16, '9001414214121', 'Сочная курочка со специями Kotanyi');
+INSERT INTO Products VALUES(17, '8801045996677', 'Кляр Оттоги');
+INSERT INTO Products VALUES(18, '4607046121865', 'Рис круглозёрный Теплые традиции');
+INSERT INTO Products VALUES(19, '4600935000432', 'Крупа гречневая Prosto');
+INSERT INTO Products VALUES(20, '4603406001143', 'Кукуруза особо сладкая ФрауМарта');
 
 
-INSERT INTO Shops VALUES(1, "Самбери", "Хабаровский край", "Хабаровск", "ул. Тихоокеанская 140", 1);
-INSERT INTO Shops VALUES(2, "Раз-Два", "Хабаровский край", "Комсомольск-на-Амуре", "ул. Ленина 38", 5);
-INSERT INTO Shops VALUES(3, "Реми", "Приморский край", "Уссурийск", "ул. Промышленная 96", 9);
-INSERT INTO Shops VALUES(4, "Пятерочка", "Приморский край", "Владивосток", "ул. Океанская 10", 13);
+INSERT INTO Employees VALUES(1, 'Родионов', 'Парамон', '+7(914)621-84-52', 'thisisem.a.il@gmail.com', 'Управляющий', NULL);
+INSERT INTO Employees VALUES(2, 'Лебедев', 'Марк', '+7(914)574-76-01', 'thisise.mail@gmail.com', 'Бухгалтер', NULL);
+INSERT INTO Employees VALUES(3, 'Лазарев', 'Зиновий', '+7(914)078-81-35', 'thisise.m.a.i.l@gmail.com', 'Продавец-консультант', NULL);
+INSERT INTO Employees VALUES(4, 'Андреев', 'Витольд', '+7(914)920-69-48', 'thisis.ema.i.l@gmail.com', 'Уборщик', NULL);
+INSERT INTO Employees VALUES(5, 'Кудряшов', 'Михаил', '+7(914)694-04-62', 'thisis.e.m.a.i.l@gmail.com', 'Управляющий', NULL);
+INSERT INTO Employees VALUES(6, 'Крюков', 'Азарий', '+7(914)377-98-82', 'thisi.se.m.a.i.l@gmail.com', 'Бухгалтер', NULL);
+INSERT INTO Employees VALUES(7, 'Соболев', 'Зиновий', '+7(914)607-74-32', 'thisi.s.e.m.ail@gmail.com', 'Продавец-консультант', NULL);
+INSERT INTO Employees VALUES(8, 'Никифоров', 'Владлен', '+7(914)520-57-81', 'this.ise.mail@gmail.com', 'Уборщик', NULL);
+INSERT INTO Employees VALUES(9, 'Смирнова', 'Кара', '+7(914)753-21-62', 'this.ise.m.a.il@gmail.com', 'Управляющий', NULL);
+INSERT INTO Employees VALUES(10, 'Дьячкова', 'Полина', '+7(914)394-28-71', 'th.isi.s.ema.i.l@gmail.com', 'Бухгалтер', NULL);
+INSERT INTO Employees VALUES(11, 'Иванкова', 'Полина', '+7(914)783-11-55', 'th.isi.s.e.ma.i.l@gmail.com', 'Продавец-консультант', NULL);
+INSERT INTO Employees VALUES(12, 'Савина', 'Ева', '+7(914)852-54-39', 'th.is.is.e.m.ail@gmail.com', 'Уборщик', NULL);
+INSERT INTO Employees VALUES(13, 'Киселева', 'Кристина', '+7(914)824-09-65', 'th.i.s.is.e.m.ail@gmail.com', 'Управляющий', NULL);
+INSERT INTO Employees VALUES(14, 'Меркушева', 'Арина', '+7(914)605-47-69', 't.hisi.se.m.a.i.l@gmail.com', 'Бухгалтер', NULL);
+INSERT INTO Employees VALUES(15, 'Николаева', 'Софья', '+7(914)526-78-24', 't.hi.sis.em.ai.l@gmail.com', 'Продавец-консультант', NULL);
+INSERT INTO Employees VALUES(16, 'Воронцова', 'Рая', '+7(914)773-11-24', 't.h.isise.ma.i.l@gmail.com', 'Уборщик', NULL);
+
+
+INSERT INTO Shops VALUES(1, 'Самбери', 'Хабаровский край', 'Хабаровск', 'ул. Тихоокеанская 140', 1);
+INSERT INTO Shops VALUES(2, 'Раз-Два', 'Хабаровский край', 'Комсомольск-на-Амуре', 'ул. Ленина 38', 5);
+INSERT INTO Shops VALUES(3, 'Реми', 'Приморский край', 'Уссурийск', 'ул. Промышленная 96', 9);
+INSERT INTO Shops VALUES(4, 'Пятерочка', 'Приморский край', 'Владивосток', 'ул. Океанская 10', 13);
 
 
 UPDATE Employees SET Shop_ID=1 WHERE ID BETWEEN 1 AND 5;
 UPDATE Employees SET Shop_ID=2 WHERE ID BETWEEN 5 AND 9;
 UPDATE Employees SET Shop_ID=3 WHERE ID BETWEEN 9 AND 13;
 UPDATE Employees SET Shop_ID=4 WHERE ID BETWEEN 13 AND 17;
+
+
+INSERT INTO Purchases VALUES(1, '2020-12-27', 2587, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 1, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 1, 1, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 18, 1, 5, 439, 0);
+
+INSERT INTO Purchases VALUES(2, '2020-12-27', 1480, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 2, 4, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 2, 4, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 10, 2, 1, 135, 15);
+
+INSERT INTO Purchases VALUES(3, '2020-12-27', 789, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 13, 3, 1, 211, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 3, 1, 341, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 3, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(4, '2020-12-28', 991, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 4, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 4, 1, 310, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 4, 1, 297, 0);
+
+INSERT INTO Purchases VALUES(5, '2020-12-28', 1057, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 5, 2, 228, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 17, 5, 1, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 7, 5, 1, 140, 0);
+
+INSERT INTO Purchases VALUES(6, '2020-12-28', 842, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 3, 6, 1, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 6, 6, 2, 145, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 10, 6, 1, 135, 0);
+INSERT INTO Purchase_Receipts VALUES(4, 7, 6, 1, 140, 0);
+
+INSERT INTO Purchases VALUES(7, '2020-12-29', 1493, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 3, 7, 1, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 7, 1, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 7, 1, 19, 0);
+INSERT INTO Purchase_Receipts VALUES(4, 18, 7, 2, 439, 0);
+
+INSERT INTO Purchases VALUES(8, '2020-12-29', 2159, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 8, 1, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 8, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 11, 8, 5, 310, 12);
+
+INSERT INTO Purchases VALUES(9, '2020-12-29', 1507, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 9, 5, 228, 12);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 9, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 7, 9, 1, 140, 0);
+
+INSERT INTO Purchases VALUES(10, '2020-12-30', 1226, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 10, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 10, 2, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 9, 10, 1, 384, 0);
+
+INSERT INTO Purchases VALUES(11, '2020-12-30', 756, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 11, 1, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 11, 1, 295, 0);
+
+INSERT INTO Purchases VALUES(12, '2020-12-30', 2478, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 12, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 12, 1, 341, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 12, 2, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(4, 18, 12, 3, 439, 10);
+
+INSERT INTO Purchases VALUES(13, '2020-12-31', 879, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 13, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 13, 1, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 13, 1, 297, 0);
+
+INSERT INTO Purchases VALUES(14, '2020-12-31', 893, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 14, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 14, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 17, 14, 1, 461, 0);
+
+INSERT INTO Purchases VALUES(15, '2020-12-31', 834, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 3, 15, 1, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 15, 1, 295, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 15, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(16, '2021-01-01', 631, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 16, 1, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 16, 16, 2, 19, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 13, 16, 1, 211, 0);
+
+INSERT INTO Purchases VALUES(17, '2021-01-01', 492, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 15, 17, 1, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 17, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 7, 17, 1, 140, 0);
+
+INSERT INTO Purchases VALUES(18, '2021-01-01', 990, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 18, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 18, 5, 140, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 4, 18, 1, 53, 0);
+
+INSERT INTO Purchases VALUES(19, '2021-01-02', 2499, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 19, 1, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 19, 5, 437, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 19, 1, 19, 0);
+
+
+INSERT INTO Purchases VALUES(20, '2021-01-02', 1195, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 11, 20, 1, 310, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 20, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 20, 2, 299, 0);
+
+INSERT INTO Purchases VALUES(21, '2021-01-02', 855, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 21, 1, 228, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 21, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 2, 21, 2, 287, 0);
+
+INSERT INTO Purchases VALUES(22, '2021-01-03', 3607, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 22, 5, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 22, 5, 384, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 2, 22, 1, 287, 0);
+
+INSERT INTO Purchases VALUES(23, '2021-01-03', 198, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 23, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 23, 1, 53, 0);
+
+INSERT INTO Purchases VALUES(24, '2021-01-03', 461, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 24, 1, 461, 0);
+
+INSERT INTO Purchases VALUES(25, '2021-01-04', 679, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 25, 1, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 25, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 25, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(26, '2021-01-04', 2251, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 26, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 26, 5, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 5, 26, 1, 382, 0);
+
+INSERT INTO Purchases VALUES(27, '2021-01-04', 978, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 15, 27, 1, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 27, 1, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 5, 27, 1, 382, 0);
+
+INSERT INTO Purchases VALUES(28, '2021-01-05', 667, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 28, 2, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 10, 28, 1, 135, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 28, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(29, '2021-01-05', 1172, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 29, 3, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 29, 1, 287, 0);
+
+INSERT INTO Purchases VALUES(30, '2021-01-05', 636, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 30, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 1, 30, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(31, '2021-01-06', 984, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 31, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 31, 1, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 12, 31, 1, 437, 0);
+
+INSERT INTO Purchases VALUES(32, '2021-01-06', 677, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 32, 1, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 32, 1, 295, 0);
+
+INSERT INTO Purchases VALUES(33, '2021-01-06', 1763, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 33, 5, 228, 5);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 33, 1, 437, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 13, 33, 1, 211, 0);
+
+INSERT INTO Purchases VALUES(34, '2021-01-07', 853, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 34, 1, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 17, 34, 1, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 34, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(35, '2021-01-07', 681, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 35, 1, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 35, 1, 299, 0);
+
+INSERT INTO Purchases VALUES(36, '2021-01-07', 432, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 36, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 6, 36, 1, 145, 0);
+
+INSERT INTO Purchases VALUES(37, '2021-01-08', 539, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 37, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 37, 1, 287, 0);
+
+INSERT INTO Purchases VALUES(38, '2021-01-08', 455, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 38, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 38, 1, 310, 0);
+
+INSERT INTO Purchases VALUES(39, '2021-01-08', 594, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 39, 1, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 39, 1, 299, 0);
+
+INSERT INTO Purchases VALUES(40, '2021-01-09', 742, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 40, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 40, 1, 310, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 40, 1, 145, 0);
+
+INSERT INTO Purchases VALUES(41, '2021-01-09', 1108, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 41, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 41, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 12, 41, 1, 437, 0);
+
+INSERT INTO Purchases VALUES(42, '2021-01-09', 637, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 18, 42, 1, 439, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 6, 42, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 4, 42, 1, 53, 0);
+
+INSERT INTO Purchases VALUES(43, '2021-01-10', 787, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 4, 43, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 5, 43, 2, 382, 15);
+
+INSERT INTO Purchases VALUES(44, '2021-01-10', 1916, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 44, 1, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 18, 44, 2, 439, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 44, 1, 297, 15);
+INSERT INTO Purchase_Receipts VALUES(4, 8, 44, 1, 295, 0);
+
+INSERT INTO Purchases VALUES(45, '2021-01-10', 861, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 45, 3, 228, 25);
+INSERT INTO Purchase_Receipts VALUES(2, 1, 45, 1, 252, 0);
+
+INSERT INTO Purchases VALUES(46, '2021-01-11', 575, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 46, 5, 140, 25);
+
+INSERT INTO Purchases VALUES(47, '2021-01-11', 514, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 47, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 47, 1, 384, 15);
+
+INSERT INTO Purchases VALUES(48, '2021-01-11', 690, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 48, 2, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 48, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 5, 48, 1, 382, 25);
+
+INSERT INTO Purchases VALUES(49, '2021-01-12', 817, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 49, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 10, 49, 1, 135, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 11, 49, 1, 310, 12);
+
+INSERT INTO Purchases VALUES(50, '2021-01-12', 1134, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 4, 50, 2, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 50, 2, 140, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 9, 50, 2, 384, 0);
+
+INSERT INTO Purchases VALUES(51, '2021-01-12', 1532, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 51, 2, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 51, 1, 228, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 13, 51, 2, 211, 20);
+
+INSERT INTO Purchases VALUES(52, '2021-01-13', 787, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 3, 52, 2, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 52, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 52, 1, 145, 5);
+
+INSERT INTO Purchases VALUES(53, '2021-01-13', 898, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 53, 1, 461, 5);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 53, 2, 228, 5);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 53, 4, 19, 20);
+
+INSERT INTO Purchases VALUES(54, '2021-01-13', 1620, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 54, 4, 287, 20);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 54, 1, 297, 5);
+INSERT INTO Purchase_Receipts VALUES(3, 7, 54, 2, 140, 10);
+
+INSERT INTO Purchases VALUES(55, '2021-01-14', 2876, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 55, 4, 140, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 55, 4, 310, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 55, 4, 299, 10);
+
+INSERT INTO Purchases VALUES(56, '2021-01-14', 654, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 16, 56, 1, 19, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 56, 1, 437, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 19, 56, 1, 228, 10);
+
+INSERT INTO Purchases VALUES(58, '2021-01-14', 2661, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 3, 58, 3, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 58, 1, 287, 5);
+INSERT INTO Purchase_Receipts VALUES(3, 5, 58, 4, 382, 10);
+
+INSERT INTO Purchases VALUES(59, '2021-01-15', 2234, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 59, 10, 140, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 59, 2, 295, 20);
+INSERT INTO Purchase_Receipts VALUES(3, 9, 59, 1, 384, 0);
+
+INSERT INTO Purchases VALUES(60, '2021-01-15', 4605, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 11, 60, 4, 310, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 60, 7, 437, 5);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 60, 1, 341, 0);
+
+INSERT INTO Purchases VALUES(61, '2021-01-15', 5216, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 16, 61, 4, 19, 20);
+INSERT INTO Purchase_Receipts VALUES(2, 17, 61, 6, 461, 5);
+INSERT INTO Purchase_Receipts VALUES(3, 18, 61, 6, 439, 25);
+
+INSERT INTO Purchases VALUES(62, '2021-01-16', 1849, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 62, 6, 228, 25);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 62, 2, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 62, 5, 145, 40);
+
+INSERT INTO Purchases VALUES(63, '2021-01-16', 961, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 63, 1, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 63, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 12, 63, 1, 437, 0);
+
+INSERT INTO Purchases VALUES(64, '2021-01-16', 4708, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 14, 64, 8, 341, 22);
+INSERT INTO Purchase_Receipts VALUES(2, 16, 64, 4, 19, 30);
+INSERT INTO Purchase_Receipts VALUES(3, 8, 64, 8, 295, 20);
+
+INSERT INTO Purchases VALUES(65, '2021-01-17', 1331, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 65, 1, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 65, 3, 310, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 65, 1, 19, 0);
+
+INSERT INTO Purchases VALUES(66, '2021-01-17', 3055, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 18, 66, 3, 439, 5);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 66, 1, 228, 11);
+INSERT INTO Purchase_Receipts VALUES(3, 9, 66, 4, 384, 0);
+
+INSERT INTO Purchases VALUES(67, '2021-01-17', 3570, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 4, 67, 5, 53, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 13, 67, 10, 211, 25);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 67, 5, 299, 0);
+
+INSERT INTO Purchases VALUES(68, '2021-01-18', 1811, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 68, 1, 461, 5);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 68, 5, 228, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 68, 2, 145, 0);
+
+INSERT INTO Purchases VALUES(69, '2021-01-18', 2777, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 69, 3, 382, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 69, 5, 310, 19);
+INSERT INTO Purchase_Receipts VALUES(3, 13, 69, 1, 211, 5);
+
+INSERT INTO Purchases VALUES(70, '2021-01-18', 3677, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 70, 3, 140, 7);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 70, 7, 437, 30);
+INSERT INTO Purchase_Receipts VALUES(3, 18, 70, 1, 439, 10);
+
+INSERT INTO Purchases VALUES(71, '2021-01-19', 3298, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 71, 3, 252, 8);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 71, 6, 287, 50);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 71, 4, 297, 11);
+
+INSERT INTO Purchases VALUES(72, '2021-01-19', 2004, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 4, 72, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 5, 72, 3, 382, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 72, 10, 145, 60);
+
+INSERT INTO Purchases VALUES(73, '2021-01-19', 2505, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 73, 15, 140, 70);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 73, 3, 295, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 10, 73, 5, 135, 15);
+
+INSERT INTO Purchases VALUES(74, '2021-01-20', 3641, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 10, 74, 5, 135, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 74, 10, 310, 40);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 74, 1, 341, 0);
+
+INSERT INTO Purchases VALUES(75, '2021-01-20', 2973, 3);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 75, 3, 299, 5);
+INSERT INTO Purchase_Receipts VALUES(3, 17, 75, 3, 461, 5);
+INSERT INTO Purchase_Receipts VALUES(4, 18, 75, 1, 439, 15);
+
+INSERT INTO Purchases VALUES(76, '2021-01-20', 3715, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 76, 5, 252, 17);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 76, 3, 287, 40);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 76, 7, 297, 40);
+
+INSERT INTO Purchases VALUES(77, '2021-01-21', 2156, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 4, 77, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 5, 77, 4, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 77, 5, 145, 30);
+
+INSERT INTO Purchases VALUES(78, '2021-01-21', 3305, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 78, 1, 140, 30);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 78, 5, 295, 30);
+INSERT INTO Purchase_Receipts VALUES(3, 9, 78, 5, 384, 10);
+
+INSERT INTO Purchases VALUES(79, '2021-01-21', 2112, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 10, 79, 1, 135, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 11, 79, 5, 310, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 12, 79, 1, 437, 0);
+
+INSERT INTO Purchases VALUES(80, '2021-01-22', 3280, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 13, 80, 4, 211, 30);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 80, 4, 341, 100);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 80, 8, 299, 100);
+
+INSERT INTO Purchases VALUES(81, '2021-01-22', 779, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 15, 81, 1, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 16, 81, 1, 19, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 17, 81, 1, 461, 0);
+
+INSERT INTO Purchases VALUES(82, '2021-01-22', 2565, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 18, 82, 4, 439, 20);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 82, 1, 228, 20);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 82, 3, 252, 25);
+
+INSERT INTO Purchases VALUES(83, '2021-01-23', 2778, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 83, 7, 287, 100);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 83, 8, 297, 120);
+INSERT INTO Purchase_Receipts VALUES(3, 4, 83, 1, 53, 0);
+
+
+INSERT INTO Purchases VALUES(85, '2021-01-23', 5535, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 85, 15, 382, 100);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 85, 3, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 8, 85, 3, 295, 0);
+
+INSERT INTO Purchases VALUES(86, '2021-01-23', 829, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 86, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 10, 86, 1, 135, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 11, 86, 1, 310, 0);
+
+INSERT INTO Purchases VALUES(87, '2021-01-24', 2626, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 12, 87, 10, 437, 150);
+INSERT INTO Purchase_Receipts VALUES(2, 13, 87, 15, 211, 250);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 87, 1, 341, 0);
+
+INSERT INTO Purchases VALUES(88, '2021-01-24', 1243, 3);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 88, 2, 299, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 88, 5, 19, 30);
+INSERT INTO Purchase_Receipts VALUES(4, 17, 88, 1, 461, 30);
+
+INSERT INTO Purchases VALUES(89, '2021-01-24', 3647, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 18, 89, 7, 439, 120);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 89, 3, 228, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 1, 89, 5, 252, 100);
+
+INSERT INTO Purchases VALUES(90, '2021-01-25', 2053, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 90, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 90, 3, 287, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 90, 5, 297, 100);
+
+INSERT INTO Purchases VALUES(92, '2021-01-25', 3785, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 92, 10, 145, 150);
+INSERT INTO Purchase_Receipts VALUES(2, 5, 92, 10, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 4, 92, 5, 53, 50);
+
+INSERT INTO Purchases VALUES(93, '2021-01-25', 1460, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 93, 5, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 93, 5, 140, 50);
+INSERT INTO Purchase_Receipts VALUES(3, 8, 93, 1, 295, 10);
+
+INSERT INTO Purchases VALUES(94, '2021-01-26', 2042, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 12, 94, 2, 437, 20);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 94, 1, 341, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 94, 3, 299, 10);
+
+INSERT INTO Purchases VALUES(95, '2021-01-26', 2473, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 18, 95, 3, 439, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 19, 95, 5, 228, 30);
+INSERT INTO Purchase_Receipts VALUES(3, 13, 95, 1, 211, 15);
+
+INSERT INTO Purchases VALUES(96, '2021-01-26', 623, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 14, 96, 1, 341, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 96, 1, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 96, 2, 19, 20);
+
+INSERT INTO Purchases VALUES(97, '2021-01-27', 217200, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 14, 98, 500, 341, 25);
+INSERT INTO Purchase_Receipts VALUES(2, 15, 98, 300, 299, 50);
+INSERT INTO Purchase_Receipts VALUES(3, 16, 98, 500, 19, 50);
+
+INSERT INTO Purchases VALUES(99, '2021-01-27', 109489, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 17, 99, 100, 461, 25);
+INSERT INTO Purchase_Receipts VALUES(2, 18, 99, 111, 439, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 19, 99, 90, 228, 25);
+
+INSERT INTO Purchases VALUES(100, '2021-01-27', 900, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 100, 1, 228, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 17, 100, 1, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 13, 100, 1, 211, 0);
+
+INSERT INTO Purchases VALUES(101, '2021-01-28', 836, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 101, 1, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 101, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 101, 1, 297, 0);
+
+INSERT INTO Purchases VALUES(102, '2021-01-28', 580, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 4, 102, 1, 53, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 6, 102, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 5, 102, 1, 382, 0);
+
+INSERT INTO Purchases VALUES(103, '2021-01-28', 580, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 103, 1, 145, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 103, 1, 140, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 8, 103, 1, 295, 0);
+
+INSERT INTO Purchases VALUES(104, '2021-01-29', 5820, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 104, 5, 384, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 10, 104, 10, 135, 25);
+INSERT INTO Purchase_Receipts VALUES(3, 11, 104, 10, 310, 25);
+
+INSERT INTO Purchases VALUES(105, '2021-01-29', 7931, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 12, 105, 15, 437, 30);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 105, 1, 341, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 105, 5, 299, 0);
+
+INSERT INTO Purchases VALUES(106, '2021-01-29', 5356, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 16, 106, 10, 19, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 17, 106, 9, 461, 30);
+INSERT INTO Purchase_Receipts VALUES(3, 18, 106, 3, 439, 10);
+
+INSERT INTO Purchases VALUES(107, '2021-01-30', 2777, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 107, 5, 228, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 107, 1, 287, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 107, 3, 297, 10);
+
+INSERT INTO Purchases VALUES(108, '2021-01-30', 1712, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 5, 108, 1, 382, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 6, 108, 7, 145, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 7, 108, 3, 140, 0);
+
+INSERT INTO Purchases VALUES(109, '2021-01-30', 2315, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 109, 1, 295, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 109, 5, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 10, 109, 1, 135, 25);
+
+INSERT INTO Purchases VALUES(110, '2021-01-31', 2744, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 11, 110, 6, 310, 25);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 110, 1, 437, 25);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 110, 1, 341, 30);
+
+
+INSERT INTO Purchases VALUES(111, '2021-01-31', 779, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 15, 111, 1, 299, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 16, 111, 1, 19, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 17, 111, 1, 461, 0);
+
+INSERT INTO Purchases VALUES(112, '2021-01-31', 2569, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 112, 3, 228, 5);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 112, 5, 341, 15);
+INSERT INTO Purchase_Receipts VALUES(3, 8, 112, 1, 295, 25);
+
+INSERT INTO Purchases VALUES(113, '2021-02-01', 829, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 9, 113, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 10, 113, 1, 135, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 11, 113, 1, 310, 0);
+
+INSERT INTO Purchases VALUES(114, '2021-02-01', 2782, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 12, 114, 2, 437, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 13, 114, 3, 211, 50);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 114, 5, 341, 50);
+
+INSERT INTO Purchases VALUES(115, '2021-02-01', 1723, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 15, 115, 3, 299, 20);
+INSERT INTO Purchase_Receipts VALUES(2, 16, 115, 1, 19, 35);
+INSERT INTO Purchase_Receipts VALUES(3, 17, 115, 2, 461, 10);
+
+INSERT INTO Purchases VALUES(116, '2021-02-02', 120660, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 1, 116, 200, 252, 55);
+INSERT INTO Purchase_Receipts VALUES(2, 2, 116, 220, 287, 60);
+INSERT INTO Purchase_Receipts VALUES(3, 3, 116, 135, 297, 65);
+
+INSERT INTO Purchases VALUES(117, '2021-02-02', 2379, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 3, 117, 10, 297, 70);
+INSERT INTO Purchase_Receipts VALUES(2, 4, 117, 3, 53, 55);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 117, 1, 145, 30);
+
+INSERT INTO Purchases VALUES(118, '2021-02-02', 1239, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 7, 118, 1, 140, 30);
+INSERT INTO Purchase_Receipts VALUES(2, 8, 118, 3, 295, 25);
+INSERT INTO Purchase_Receipts VALUES(3, 9, 118, 1, 384, 65);
+
+INSERT INTO Purchases VALUES(119, '2021-02-03', 1928, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 11, 119, 3, 310, 65);
+INSERT INTO Purchase_Receipts VALUES(2, 14, 119, 1, 341, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 15, 119, 3, 299, 15);
+
+INSERT INTO Purchases VALUES(120, '2021-02-03', 2801, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 16, 120, 3, 19, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 17, 120, 5, 461, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 18, 120, 1, 439, 0);
+
+INSERT INTO Purchases VALUES(121, '2021-02-03', 1755, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 19, 121, 1, 228, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 1, 121, 5, 252, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 2, 121, 1, 287, 5);
+
+INSERT INTO Purchases VALUES(122, '2021-02-04', 2339, NULL);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 122, 3, 287, 20);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 122, 5, 297, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 4, 122, 1, 53, 0);
+
+INSERT INTO Purchases VALUES(123, '2021-02-04', 3995, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 6, 123, 9, 145, 30);
+INSERT INTO Purchase_Receipts VALUES(2, 7, 123, 15, 140, 100);
+INSERT INTO Purchase_Receipts VALUES(3, 8, 123, 8, 295, 0);
+
+INSERT INTO Purchases VALUES(124, '2021-02-04', 1055, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 2, 124, 3, 287, 10);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 124, 1, 297, 10);
+INSERT INTO Purchase_Receipts VALUES(3, 4, 124, 9, 53, 60);
+
+INSERT INTO Purchases VALUES(125, '2021-02-05', 814, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 125, 1, 295, 0);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 125, 1, 384, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 10, 125, 1, 135, 0);
+
+INSERT INTO Purchases VALUES(126, '2021-02-05', 6804, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 11, 126, 4, 310, 55);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 126, 8, 437, 0);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 126, 8, 341, 55);
+
+INSERT INTO Purchases VALUES(127, '2021-02-05', 1272, 3);
+INSERT INTO Purchase_Receipts VALUES(1, 15, 127, 1, 299, 55);
+INSERT INTO Purchase_Receipts VALUES(2, 16, 127, 5, 19, 90);
+INSERT INTO Purchase_Receipts VALUES(3, 17, 127, 3, 461, 0);
+
+INSERT INTO Purchases VALUES(128, '2021-02-06', 1599, 7);
+INSERT INTO Purchase_Receipts VALUES(1, 13, 128, 5, 211, 15);
+INSERT INTO Purchase_Receipts VALUES(2, 3, 128, 2, 297, 45);
+INSERT INTO Purchase_Receipts VALUES(3, 6, 128, 1, 145, 30);
+
+INSERT INTO Purchases VALUES(129, '2021-02-06', 2580, 11);
+INSERT INTO Purchase_Receipts VALUES(1, 8, 129, 8, 295, 30);
+INSERT INTO Purchase_Receipts VALUES(2, 9, 129, 1, 384, 98);
+INSERT INTO Purchase_Receipts VALUES(3, 10, 129, 3, 135, 77);
+
+INSERT INTO Purchases VALUES(130, '2021-02-06', 6892, 15);
+INSERT INTO Purchase_Receipts VALUES(1, 11, 130, 12, 310, 65);
+INSERT INTO Purchase_Receipts VALUES(2, 12, 130, 5, 437, 82);
+INSERT INTO Purchase_Receipts VALUES(3, 14, 130, 7, 341, 30);

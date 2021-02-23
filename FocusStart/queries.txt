@@ -1,0 +1,19 @@
+DROP VIEW IF EXISTS last_month;
+
+CREATE VIEW last_month AS
+SELECT products.ID
+FROM products
+LEFT JOIN purchase_receipts AS pure
+	ON products.ID=pure.product_ID
+LEFT JOIN purchases AS pr
+	ON pure.purchase_ID=pr.ID
+WHERE EXTRACT(MONTH FROM date_time)=EXTRACT(MONTH FROM (NOW() - INTERVAL '1 MONTH')) OR date_time=NULL
+GROUP BY products.ID
+;
+
+SELECT pr.product_name, pr.code
+FROM last_month
+RIGHT JOIN products AS pr
+	ON last_month.ID=pr.ID
+WHERE last_month.ID IS NULL
+;
